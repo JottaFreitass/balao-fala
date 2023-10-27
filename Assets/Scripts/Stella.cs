@@ -4,23 +4,35 @@ using UnityEngine;
 
 public class Stella : MonoBehaviour
 {
-    public float velocidade = 30f;
+    public float velocidade = 3.0f;
     public Animator animator;
     private Rigidbody2D playerRigidbody2D;
     private float MovimentoHorizontal;
+
+    DialogueSistem dialogueSistem;
+
+    private void Awake()
+    {
+        dialogueSistem = FindObjectOfType<DialogueSistem>();
+    }
 
     void Start()
     {
         Debug.Log("Start de " + this.name);
         animator = GetComponent<Animator>();
-        playerRigidbody2D = GetComponent<Rigidbody2D>();
-        
+        playerRigidbody2D = GetComponent<Rigidbody2D>();  
     }
 
     void Update()
     {
         Movimento();
         MovimentoHorizontal = Input.GetAxisRaw("Horizontal");
+
+            if(Input.GetKeyDown(KeyCode.E))
+            {
+                dialogueSistem.NEXT();
+            }
+
     }
 
     private void Movimento()
@@ -31,32 +43,8 @@ public class Stella : MonoBehaviour
         Vector2 newPosition = playerRigidbody2D.position + moveDirection * velocidade * Time.deltaTime;
 
         playerRigidbody2D.MovePosition(newPosition);
-
-        /*switch (MovimentoHorizontal)
-        {
-            case 1:
-                animator.Play("andar_direita");
-                Debug.Log("Andar Direita");
-                break;
-
-            case -1:
-                animator.Play("andar_esquerda");
-                Debug.Log("Andar Esquerda");
-                break;
-
-            case 0:
-                animator.Play("Idle");
-                Debug.Log("Parado");
-                break;
-        }*/
-
-        
-        }
-
-
-
-
     }
+
         private void OnTriggerEnter2D(Collider2D other)
         {
 

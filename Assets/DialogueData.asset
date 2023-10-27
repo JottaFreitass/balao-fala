@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30d631c54f000fb4c834c1ee06c7f6eb, type: 3}
+  m_Name: DialogueData
+  m_EditorClassIdentifier: 
+  talkScript:
+  - name: STELLA
+    text: O QUE FOI AQUILO?????
+  - name: AGATHA
+    text: Aquilo o que? O "procedimento"?
+  - name: STELLA
+    text: "AQUELE N\xC3O FOI O PROCEDIMENTO QUE APRENDI NA ACADEMIA!"
+  - name: STELLA
+    text: "ISSO EST\xC1 ERRADO DE MUITAS FORMAS! ME DIZ QUE ISSO FOI UM ERRO! POR
+      FAVOR!"
+  - name: AGATHA
+    text: Sabe de uma coisa minha filha?
+  - name: AGATHA
+    text: "Eu sempre acreditei em voc\xEA e pensava que nos traria orgulho!"
+  - name: AGATHA
+    text: "Achei que n\xE3o seria uma decep\xE7\xE3o como seu pai... mas me enganei"
+  - name: STELLA
+    text: "N\xC3O FALE DO MEU PAI COMO SE O CONHECESSE... voc\xEA vai pagar por isso"
