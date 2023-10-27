@@ -9,11 +9,9 @@ public class Stella : MonoBehaviour
     private Rigidbody2D playerRigidbody2D;
     private float MovimentoHorizontal;
 
-    DialogueSistem dialogueSistem;
-
     private void Awake()
     {
-        dialogueSistem = FindObjectOfType<DialogueSistem>();
+        //dialogueSistem = FindObjectOfType<DialogueSistem>();
     }
 
     void Start()
@@ -28,10 +26,10 @@ public class Stella : MonoBehaviour
         Movimento();
         MovimentoHorizontal = Input.GetAxisRaw("Horizontal");
 
-            if(Input.GetKeyDown(KeyCode.E))
+            /*if(Input.GetKeyDown(KeyCode.E))
             {
                 dialogueSistem.NEXT();
-            }
+            }*/
 
     }
 
