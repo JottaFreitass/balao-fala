@@ -699,7 +699,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1008279389
 RectTransform:
   m_ObjectHideFlags: 0
@@ -840,8 +840,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5284.2, y: 354}
-  m_SizeDelta: {x: 91.593, y: 91.593}
+  m_AnchoredPosition: {x: 5264.3247, y: 470}
+  m_SizeDelta: {x: 106.457, y: 84.175}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1574562466
 CanvasRenderer:
@@ -871,7 +871,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 151a8069962117f49b5db1296c600a40, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1145,9 +1145,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iconPersonagem: {fileID: 1574562467}
   stellaFaces:
-  - {fileID: 21300000, guid: 8bbd29c0cc04e874d9e65742e5f770d7, type: 3}
-  - {fileID: 21300000, guid: 29a1d722c5593e64292c756dbaa42eb3, type: 3}
-  - {fileID: 21300000, guid: 2faae75219c98364980130f47843c1c7, type: 3}
+  - {fileID: 21300000, guid: 151a8069962117f49b5db1296c600a40, type: 3}
+  - {fileID: 21300000, guid: 8ebf27f69df463a45a55b2ea5e805529, type: 3}
+  - {fileID: 21300000, guid: 8c11d8a2920708d42918ae23b0587430, type: 3}
+  - {fileID: 21300000, guid: bcd7addc63facf84c8a7e9c3ab0b526c, type: 3}
+  - {fileID: 21300000, guid: b077fa03dade8194d8367dac7bb7a97e, type: 3}
   agathaFaces:
   - {fileID: 21300000, guid: 04c219be7b6fe6040bc16b5b73b29989, type: 3}
   - {fileID: 21300000, guid: 623ab06beb3d9534a9e800e7ced6edd9, type: 3}
@@ -1157,7 +1159,7 @@ MonoBehaviour:
   cdPular: 0
   textoDialogo: {fileID: 2124250609}
   painelDialogo: {fileID: 1008279388}
-  speedBase: 0.1
+  speedBase: 0.2
   indexFala: 0
   aindaFalando: 0
 --- !u!4 &2089013928
@@ -1246,7 +1248,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &2124250610
 CanvasRenderer:
   m_ObjectHideFlags: 0

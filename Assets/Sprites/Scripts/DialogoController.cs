@@ -10,7 +10,7 @@ public class DialogoController : MonoBehaviour
      [SerializeField] Sprite[] agathaFaces;
      [SerializeField] Sprite[] oficialFaces;
     [SerializeField] float cdPular;
-    [SerializeField] Text textoDialogo;
+    [SerializeField] public Text textoDialogo;
     [SerializeField] GameObject painelDialogo;
     private float speedText;
     [SerializeField] float speedBase;
@@ -20,13 +20,10 @@ public class DialogoController : MonoBehaviour
 
     /*
     0 = Neutro
-    1 = Feliz
-    2 = Surpreso
-    3 = Triste
-    4 = Bravo
-    5 = Emputessido
-    6 = Triste
-    7 = Estressado
+    1 = Duvida
+    2 = Puta    
+    3 = Chorando
+    4 = Chocada
      */
     private void Awake()
     {

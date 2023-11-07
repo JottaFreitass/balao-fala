@@ -8,6 +8,7 @@ public class Andar_Stella : MonoBehaviour
     public float velocidade;
     [SerializeField] private Animator animator;
     public float movimentoHorizontal;
+    public bool podeAndar;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +22,18 @@ public class Andar_Stella : MonoBehaviour
     void Update()
     {
         movimentoHorizontal = Input.GetAxis("Horizontal");
-        transform.Translate(Vector3.right * Time.deltaTime * velocidade * movimentoHorizontal);
+        
 
+        if (podeAndar == true)
+       {
+        transform.Translate(Vector3.right * Time.deltaTime * velocidade * movimentoHorizontal);
         Movimento();
+       }
+       else
+       {
+
+       }
+
     }
 
     void Movimento()
@@ -44,7 +54,7 @@ public class Andar_Stella : MonoBehaviour
         {
             animator.SetBool("Direita", false);
         }
-        
+    
     }
 
 

@@ -16,9 +16,12 @@ public class DialogoSimples : MonoBehaviour
 
     [SerializeField] int qualFala;
 
+    [SerializeField] GameObject stella;
+
     private void Awake()
     {
         qualFala = 0;
+        stella = GameObject.FindWithTag("Player");
     }
 
     private void Start()
@@ -31,6 +34,7 @@ public class DialogoSimples : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && emDialogo == true)
         {
+            stella.GetComponent<Andar_Stella>().podeAndar = false;
             if (dialogo.aindaFalando == false)
             {
                 dialogo.Dialogo(TodosDialogos[qualFala].dialogos);
@@ -42,6 +46,7 @@ public class DialogoSimples : MonoBehaviour
             {
                 emDialogo = false;
                 qualFala += 1;
+                stella.GetComponent<Andar_Stella>().podeAndar = true;
             }
 
             /*if (distance.x < -0.7)
@@ -65,7 +70,6 @@ public class DialogoSimples : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            
             Debug.Log(qualFala);
             emDialogo = true;
             dialogo.indexFala = 0;
